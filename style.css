@@ -74,6 +74,151 @@ a {
   z-index: 2;
 }
 
+.magic-scroll-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  transform: translateY(calc(var(--page-scroll, 0px) * 0.05));
+}
+
+.magic-sprite {
+  position: absolute;
+  top: -12vh;
+  font-size: clamp(1rem, 1.8vw, 1.6rem);
+  opacity: 0.65;
+  filter: drop-shadow(0 0 10px rgba(255, 47, 146, 0.45));
+  animation-name: fairyFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.magic-sprite::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 84%;
+  width: 2px;
+  height: 52px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  filter: blur(0.8px);
+  opacity: 0.45;
+}
+
+.magic-sprite.size-sm {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+.magic-sprite.size-md {
+  font-size: clamp(1rem, 1.7vw, 1.5rem);
+}
+
+.magic-sprite.size-lg {
+  font-size: clamp(1.3rem, 2.4vw, 2rem);
+}
+
+.magic-sprite.hue-pink {
+  filter: drop-shadow(0 0 12px rgba(255, 47, 146, 0.6));
+}
+
+.magic-sprite.hue-cyan {
+  filter: drop-shadow(0 0 12px rgba(51, 243, 255, 0.65));
+}
+
+.magic-sprite.hue-purple {
+  filter: drop-shadow(0 0 12px rgba(122, 108, 255, 0.65));
+}
+
+.magic-sprite:nth-child(1) {
+  left: 8%;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+
+.magic-sprite:nth-child(2) {
+  left: 23%;
+  animation-duration: 15s;
+  animation-delay: -3s;
+}
+
+.magic-sprite:nth-child(3) {
+  left: 39%;
+  animation-duration: 11s;
+  animation-delay: -6s;
+}
+
+.magic-sprite:nth-child(4) {
+  left: 58%;
+  animation-duration: 13.5s;
+  animation-delay: -2s;
+}
+
+.magic-sprite:nth-child(5) {
+  left: 76%;
+  animation-duration: 16s;
+  animation-delay: -7s;
+}
+
+.magic-sprite:nth-child(6) {
+  left: 91%;
+  animation-duration: 10.5s;
+  animation-delay: -1.5s;
+}
+
+.magic-sprite:nth-child(7) {
+  left: 14%;
+  animation-duration: 14.5s;
+  animation-delay: -4.5s;
+}
+
+.magic-sprite:nth-child(8) {
+  left: 31%;
+  animation-duration: 12.8s;
+  animation-delay: -8.2s;
+}
+
+.magic-sprite:nth-child(9) {
+  left: 47%;
+  animation-duration: 16.4s;
+  animation-delay: -5.4s;
+}
+
+.magic-sprite:nth-child(10) {
+  left: 67%;
+  animation-duration: 11.4s;
+  animation-delay: -9s;
+}
+
+.magic-sprite:nth-child(11) {
+  left: 83%;
+  animation-duration: 13.7s;
+  animation-delay: -6.4s;
+}
+
+.magic-sprite:nth-child(12) {
+  left: 95%;
+  animation-duration: 17s;
+  animation-delay: -10.5s;
+}
+
+@keyframes fairyFall {
+  0% {
+    transform: translate3d(0, -15vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.68;
+  }
+  50% {
+    transform: translate3d(22px, 45vh, 0) rotate(9deg);
+  }
+  100% {
+    transform: translate3d(-20px, 118vh, 0) rotate(-14deg);
+    opacity: 0;
+  }
+}
+
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -842,6 +987,15 @@ a {
   .project-card.featured {
     grid-column: span 1;
     min-height: 320px;
+  }
+
+  .magic-sprite {
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+
+  .magic-sprite:nth-child(n+9) {
+    display: none;
   }
 
   .footer-container {

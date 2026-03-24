@@ -48,6 +48,8 @@ window.addEventListener('scroll', () => {
       navbar.classList.remove('scrolled');
     }
   }
+
+  document.documentElement.style.setProperty('--page-scroll', `${window.scrollY}px`);
 });
 
 const typewriter = document.querySelector('.typewriter');
@@ -291,3 +293,6 @@ projectCards.forEach((card) => {
 });
 
 window.addEventListener('load', initParticleSystem);
+window.addEventListener('load', () => {
+  document.documentElement.style.setProperty('--page-scroll', `${window.scrollY}px`);
+});
