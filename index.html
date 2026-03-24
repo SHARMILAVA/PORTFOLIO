@@ -6,324 +6,311 @@
   <title>Sharmila V | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="container nav">
-      <a class="logo" href="#home">Sharmila V</a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+  <div class="cursor"></div>
+  <div class="cursor-glow"></div>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="logo-text" href="#hero">&lt; SHARMILA V /&gt;</a>
+      <ul class="navbar-menu" id="primary-nav">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a class="nav-cta" href="Sharmila_V_Resume.pdf" download>Download CV</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul class="nav-links" id="primary-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#internships">Internships</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main id="home">
-    <section class="hero reveal">
-      <div class="container hero-content">
-        <p class="eyebrow"> Engineering Graduate</p>
-        <h1><span>SHARMILA V</span></h1>
-        <p class="hero-text">
-          Passionate about Embedded Systems and IoT, VLSI design and PCB design with a strong focus on practical engineering solutions.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn">Get in Touch</a>
-          <a href="Sharmila_V_Resume.pdf" class="btn btn-secondary resume-download" download>Download Resume</a>
-        </div>
+  <section id="hero" class="section hero">
+    <div class="hero-canvas-container">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+    <div class="hero-content reveal">
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title glitch" data-text="SHARMILA V">SHARMILA V</h1>
+        <p class="hero-subtitle typewriter">Electronics and Communication Engineer</p>
+        <p class="hero-tagline">Passionate about Embedded Systems, IoT, VLSI design, and PCB workflows with a strong focus on practical engineering solutions.</p>
       </div>
-    </section>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" class="section reveal">
-      <div class="container">
-        <h2>ABOUT ME 👩‍💻</h2>
-        <div class="about-grid">
-          <aside class="about-overlay about-profiles" aria-label="Professional Profiles">
-            <h3>PROFESSIONAL PROFILES</h3>
-            <p>
-              <strong>GitHub:</strong>
-              <a href="https://github.com/SHARMILAVA" target="_blank" rel="noopener noreferrer">github.com/SHARMILAVA</a>
-            </p>
-            <p>
-              <strong>LinkedIn:</strong>
-              <a href="https://www.linkedin.com/in/sharmila-v-0b1004259" target="_blank" rel="noopener noreferrer">linkedin.com/in/sharmila-v-0b1004259</a>
-            </p>
-          </aside>
-          <div class="about-main">
-            <p>
-              I am an enthusiastic <strong>Electronics and Communication Engineering student</strong> with a strong
-              foundation in Embedded Systems, IoT, and VLSI design. I am passionate about building
-              real-world engineering solutions that integrate hardware and software.
-            </p>
-            <p>
-              My academic journey at <strong>Francis Xavier Engineering College, Tirunelveli</strong> has equipped me
-              with analytical thinking and practical problem-solving skills, and I currently maintain
-              a <strong>CGPA of 8.9</strong>.
-            </p>
-            <p>
-              I have gained hands-on internship experience in PCB manufacturing, SMT, and hardware
-              testing environments, where I worked closely with PTH processes and quality workflows.
-            </p>
-            <p>
-              My projects in IoT-based energy monitoring, RFID automation, and AI-powered PM2.5 prediction
-              reflect my interest in smart systems and intelligent automation. I am a quick learner,
-              collaborative team player, and committed to continuous learning and high-quality results.
-            </p>
+  <section id="about" class="section about reveal">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2 class="section-title">About</h2>
+          <p>
+            I am an enthusiastic <span class="accent">Electronics and Communication Engineering student</span> with a strong
+            foundation in <span class="accent">Embedded Systems, IoT, and VLSI design</span>. I enjoy building real-world
+            engineering solutions that connect hardware and software.
+          </p>
+          <p>
+            My academic journey at <span class="accent">Francis Xavier Engineering College, Tirunelveli</span> has strengthened
+            my analytical thinking and practical problem-solving, and I currently maintain a
+            <span class="accent">CGPA of 8.9</span>.
+          </p>
+          <p>
+            Through internships in PCB manufacturing and embedded development, and projects in RFID automation,
+            industrial energy optimization, and PM2.5 prediction, I continue to grow as a hands-on,
+            detail-oriented engineer.
+          </p>
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-number" data-target="89">0</div>
+              <div class="stat-label">CGPA x10</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Major Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-target="2">0</div>
+              <div class="stat-label">Internships</div>
+            </div>
           </div>
         </div>
-        <aside class="about-overlay about-highlights" aria-label="Highlights">
-          <h3>QUICK HIGHLIGHTS ✨</h3>
-          <p><strong>Core Interests:</strong> Embedded Systems, IoT, VLSI, Smart Automation</p>
-          <p><strong>Internship Exposure:</strong> PCB Manufacturing, PTH/SMT Testing, Hardware Validation</p>
-          <p><strong>Project Domains:</strong> RFID Automation, Industrial IoT, PM2.5 Prediction</p>
-          <p><strong>Career Focus:</strong> Smart Electronics Systems and Industrial IoT</p>
-        </aside>
-      </div>
-    </section>
-
-    <section id="education" class="section section-alt reveal">
-      <div class="container">
-        <h2>EDUCATION 🎓</h2>
-        <div class="grid two-col">
-          <article class="card">
-            <h3>Francis Xavier Engineering College, Tirunelveli</h3>
-            <p>B.E. Electronics and Communication Engineering (2022-2026)</p>
-            <p><strong>CGPA:</strong> 8.9 (up to 7th Semester)</p>
-          </article>
-          <article class="card">
-            <h3>Vimal Matric and Higher Secondary School, Kalugumalai</h3>
-            <p>HSC - 82% (2021-2022)</p>
-            <p>SSLC - 88% (2019-2020)</p>
-          </article>
+        <div class="about-visual" aria-hidden="true">
+          <div class="rotating-box"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="internships" class="section reveal">
-      <div class="container">
-        <h2>INTERNSHIPS 💼</h2>
-        <div class="stack">
-          <article class="card">
-            <h3>Vasantha Advanced Systems, 📍 Coimbatore</h3>
-            <p><em>June - July 2024 (Offline)</em></p>
+  <section id="skills" class="section skills reveal">
+    <div class="section-container">
+      <h2 class="section-title">Skills and Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="category-tag">[EMBEDDED & IOT]</h3>
+          <div class="skill-cards">
+            <div class="skill-card"><span class="skill-icon">MCU</span><span class="skill-name">Microcontroller Programming</span></div>
+            <div class="skill-card"><span class="skill-icon">IOT</span><span class="skill-name">Arduino</span></div>
+            <div class="skill-card"><span class="skill-icon">SBC</span><span class="skill-name">Raspberry Pi</span></div>
+            <div class="skill-card"><span class="skill-icon">RTL</span><span class="skill-name">Keil</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-tag">[SIMULATION & DESIGN]</h3>
+          <div class="skill-cards">
+            <div class="skill-card"><span class="skill-icon">MAT</span><span class="skill-name">MATLAB</span></div>
+            <div class="skill-card"><span class="skill-icon">PSP</span><span class="skill-name">PSpice</span></div>
+            <div class="skill-card"><span class="skill-icon">PRT</span><span class="skill-name">Proteus</span></div>
+            <div class="skill-card"><span class="skill-icon">XIL</span><span class="skill-name">Xilinx</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-tag">[HARDWARE & SOFTWARE]</h3>
+          <div class="skill-cards">
+            <div class="skill-card"><span class="skill-icon">PCB</span><span class="skill-name">PCB Testing (PTH & SMT)</span></div>
+            <div class="skill-card"><span class="skill-icon">HWT</span><span class="skill-name">Hardware Testing</span></div>
+            <div class="skill-card"><span class="skill-icon">ROB</span><span class="skill-name">Robotics</span></div>
+            <div class="skill-card"><span class="skill-icon">WEB</span><span class="skill-name">HTML & CSS</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section work reveal">
+    <div class="section-container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-lead">Selected engineering projects across automation, IoT, and AI-assisted environmental analytics.</p>
+      <div class="projects-masonry">
+        <article class="project-card featured reveal">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1200&q=80" alt="RFID Based Attendance System" />
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>RFID Based Attendance System</h3>
+                <p class="project-desc">Developed a contactless attendance solution using RFID tags and a microcontroller-driven real-time logging workflow.</p>
+                <div class="project-tags">
+                  <span class="tag">RFID</span>
+                  <span class="tag">Embedded C</span>
+                  <span class="tag">Microcontroller</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="btn btn-outline" href="#">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=900&q=80" alt="Industrial Energy Optimization Using IoT" />
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>Industrial Energy Optimization Using IoT</h3>
+                <p class="project-desc">Designed an IoT framework to monitor equipment-level power usage and surface efficiency opportunities.</p>
+                <div class="project-tags">
+                  <span class="tag">IoT</span>
+                  <span class="tag">Energy Analytics</span>
+                  <span class="tag">Dashboard</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="btn btn-outline" href="#">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="https://source.unsplash.com/1200x900/?air-quality,monitor,sensor" alt="Air quality monitor for PM2.5 prediction project" />
+            <div class="project-overlay">
+              <div class="project-info">
+                <h3>PM2.5 Prediction Using Satellite Image and Deep Learning</h3>
+                <p class="project-desc">Built a deep learning workflow on satellite and environmental datasets to forecast PM2.5 trends.</p>
+                <div class="project-tags">
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Satellite Data</span>
+                  <span class="tag">Air Quality</span>
+                </div>
+                <div class="project-buttons">
+                  <a class="btn btn-outline" href="#">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section reveal">
+    <div class="section-container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Jun 2024 - Jul 2024</div>
+          <div class="timeline-content">
+            <h3>Vasantha Advanced Systems - Coimbatore</h3>
+            <p>Internship focused on PCB manufacturing workflows, PTH/SMT process observation, and hardware reliability testing.</p>
             <ul class="detail-list">
-              <li>Understood the end-to-end PCB manufacturing workflow from raw board preparation to final inspection.</li>
-              <li>Observed and assisted in PTH and SMT process stages, with focus on precision and defect prevention.</li>
-              <li>Participated in hardware testing routines to validate signal integrity, continuity, and functional reliability.</li>
-              <li>Learned how production teams apply NIMBLE manufacturing practices for speed, quality, and traceability.</li>
-              <li>Gained practical insight into RND , quality control documentation and rework decisions in industrial electronics.</li>
+              <li>Observed end-to-end PCB production and inspection flow.</li>
+              <li>Assisted in process stages with attention to defect prevention and quality tracking.</li>
+              <li>Participated in signal integrity, continuity, and functional validation tasks.</li>
             </ul>
-          </article>
-          <article class="card">
-            <h3>Intrainz Innovation Pvt Ltd, 📍 Bangalore</h3>
-            <p><em>April - June 2023 (Online)</em></p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Apr 2023 - Jun 2023</div>
+          <div class="timeline-content">
+            <h3>Intrainz Innovation Pvt Ltd - Bangalore (Online)</h3>
+            <p>Internship covering embedded architecture fundamentals, sensor interfacing, circuit planning, and mini-project execution.</p>
             <ul class="detail-list">
-              <li>Built foundational understanding of embedded system architecture and real-time microcontroller behavior.</li>
-              <li>Implemented interfacing for sensors and peripheral modules to create dependable data acquisition flows.</li>
-              <li>Designed circuits and firmware logic while following a structured development lifecycle.</li>
-              <li>Completed a full mini project from ideation and prototyping to debugging and final system validation.</li>
-              <li>Improved documentation and presentation skills by explaining design trade-offs and test outcomes clearly.</li>
+              <li>Implemented microcontroller and peripheral interfacing workflows.</li>
+              <li>Completed a mini project through prototyping, debugging, and validation.</li>
+              <li>Improved technical documentation and presentation of design decisions.</li>
             </ul>
-          </article>
-        </div>
+          </div>
+        </article>
       </div>
-    </section>
 
-    <section id="projects" class="section section-alt reveal">
-      <div class="container">
-        <h2>PROJECTS 🚀</h2>
-        <div class="grid three-col">
-          <article class="card">
-            <div class="project-title-box">
-              <h3>📶 RFID Based Attendance System</h3>
-              <p class="meta">July 2023</p>
-            </div>
-            <div class="project-desc-box">
-              <ul class="detail-list">
-                <li>Developed a contactless attendance solution using RFID tags and reader-based identification.</li>
-                <li>Programmed microcontroller logic to authenticate IDs and timestamp student entries in real time.</li>
-                <li>Integrated display and logging features for immediate attendance confirmation and record maintenance.</li>
-                <li>Reduced manual effort and errors by automating repetitive attendance collection workflows.</li>
-                <li>Validated accuracy through repeated scan tests under different usage conditions and user traffic.</li>
-              </ul>
-            </div>
-          </article>
-          <article class="card">
-            <div class="project-title-box">
-              <h3>⚙️ Industrial Energy Optimization Using IoT</h3>
-              <p class="meta">Dec 2025</p>
-            </div>
-            <div class="project-desc-box">
-              <ul class="detail-list">
-                <li>Designed an IoT framework to monitor equipment-level energy usage across industrial units.</li>
-                <li>Collected and processed live data streams to identify high-consumption patterns and inefficiencies.</li>
-                <li>Built analytical dashboards for trend visualization and operational decision support.</li>
-                <li>Proposed optimization actions such as load balancing and scheduled operation windows.</li>
-                <li>Demonstrated how data-driven intervention can reduce energy waste and improve system utilization.</li>
-              </ul>
-            </div>
-          </article>
-          <article class="card">
-            <div class="project-title-box">
-              <h3>🌍 PM2.5 Prediction Using Satellite Image & Deep Learning</h3>
-              <p class="meta">Jan 2026</p>
-            </div>
-            <div class="project-desc-box">
-              <ul class="detail-list">
-                <li>Prepared satellite imagery and environmental datasets for supervised deep learning model training.</li>
-                <li>Engineered preprocessing steps to improve feature quality and prediction stability for PM2.5 values.</li>
-                <li>Trained and evaluated models using performance metrics to compare prediction reliability.</li>
-                <li>Developed a visualization dashboard to present pollution trends and forecast outputs clearly.</li>
-                <li>Showed practical value for early air-quality awareness and planning support in affected regions.</li>
-              </ul>
-            </div>
-          </article>
-        </div>
+      <div class="credentials-grid reveal">
+        <article class="credential-card">
+          <h3>Education</h3>
+          <p><strong>Francis Xavier Engineering College, Tirunelveli</strong></p>
+          <p>B.E. Electronics and Communication Engineering (2022-2026)</p>
+          <p>CGPA: 8.9 (up to 7th Semester)</p>
+        </article>
+        <article class="credential-card">
+          <h3>Certifications</h3>
+          <ul class="detail-list">
+            <li>NPTEL Deep Learning (12 weeks)</li>
+            <li>Industrial 4.0 and Industrial IoT (NPTEL)</li>
+            <li>Machine Learning - Great Learning</li>
+            <li>Fundamentals of Python - Udemy</li>
+            <li>TinkerCAD Evening Skill (10 hours)</li>
+          </ul>
+        </article>
+        <article class="credential-card">
+          <h3>Achievements</h3>
+          <ul class="detail-list">
+            <li>Mega Project Expo Participant</li>
+            <li>Technical Project Presenter</li>
+          </ul>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills" class="section reveal">
-      <div class="container">
-        <h2>SKILLS 🛠️</h2>
-        <div class="skills-groups">
-          <article class="card skill-card">
-            <h4>Embedded Systems & IoT</h4>
-            <ul class="list compact">
-              <li><span class="skill-icon">⚙</span><span>Arduino</span></li>
-              <li><span class="skill-icon">◉</span><span>Raspberry Pi</span></li>
-              <li><span class="skill-icon">⌘</span><span>Keil</span></li>
-              <li><span class="skill-icon">⎈</span><span>Microcontroller Programming</span></li>
-            </ul>
-          </article>
+  <section id="contact" class="section contact reveal">
+    <div class="section-container">
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="section-subtitle">Open to roles and collaborations in embedded systems, IoT, and hardware-software engineering.</p>
 
-          <article class="card skill-card">
-            <h4>Simulation & Design Tools</h4>
-            <ul class="list compact">
-              <li><span class="skill-icon">∑</span><span>MATLAB</span></li>
-              <li><span class="skill-icon">≈</span><span>PSpice</span></li>
-              <li><span class="skill-icon">⌁</span><span>Proteus</span></li>
-              <li><span class="skill-icon">⧉</span><span>TinkerCAD</span></li>
-              <li><span class="skill-icon">◈</span><span>Xilinx</span></li>
-            </ul>
-          </article>
-
-          <article class="card skill-card">
-            <h4>Core Electronics</h4>
-            <ul class="list compact">
-              <li><span class="skill-icon">⏚</span><span>Digital Electronics</span></li>
-              <li><span class="skill-icon">∠</span><span>Circuit Design & Analysis</span></li>
-            </ul>
-          </article>
-
-          <article class="card skill-card">
-            <h4>Hardware & Testing</h4>
-            <ul class="list compact">
-              <li><span class="skill-icon">✓</span><span>Hardware Testing</span></li>
-              <li><span class="skill-icon">▣</span><span>PCB Testing (PTH & SMT)</span></li>
-            </ul>
-          </article>
-
-          <article class="card skill-card">
-            <h4>Robotics & Automation</h4>
-            <ul class="list compact">
-              <li><span class="skill-icon">⦿</span><span>Robotics</span></li>
-              <li><span class="skill-icon">⇄</span><span>Actuator & Sensor Integration</span></li>
-            </ul>
-          </article>
-
-          <article class="card skill-card">
-            <h4>Web Development</h4>
-            <ul class="list compact">
-              <li><span class="skill-icon">&lt;/&gt;</span><span>HTML</span></li>
-              <li><span class="skill-icon">#</span><span>CSS</span></li>
-            </ul>
-          </article>
-        </div>
+      <div class="contact-info-grid">
+        <div class="info-chip">Location: Kalugumalai, Tuticorin (Dist)</div>
+        <div class="info-chip">Phone: <a href="tel:+919688421728">+91 96884 21728</a></div>
+        <div class="info-chip">Email: <a href="mailto:sharmila16v@gmail.com">sharmila16v@gmail.com</a></div>
       </div>
-    </section>
 
-    <section id="certifications" class="section section-alt reveal">
-      <div class="container">
-        <h2>CERTIFICATIONS 🏅</h2>
-        <div class="cert-grid">
-          <article class="card cert-card">
-            <h4>🧠 NPTEL - Deep Learning (12 weeks)</h4>
-            <p>Built practical understanding of neural networks and model evaluation methods.</p>
-          </article>
-          <article class="card cert-card">
-            <h4>🏭 Industrial 4.0 & Industrial IoT (NPTEL)</h4>
-            <p>Learned smart manufacturing concepts and connected industrial systems.</p>
-          </article>
-          <article class="card cert-card">
-            <h4>📘 Great Learning - Machine Learning</h4>
-            <p>Covered core ML workflows including data preparation and basic algorithms.</p>
-          </article>
-          <article class="card cert-card">
-            <h4>🐍 Udemy - Fundamentals of Python</h4>
-            <p>Strengthened programming basics for automation and problem-solving tasks.</p>
-          </article>
-           <article class="card cert-card">
-            <h4>🧰 Evening Skill TinkerCAD (10 Hours)</h4>
-            <p>Practiced simulation-based circuit design and rapid prototyping techniques.</p>
-          </article>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" class="form-input" placeholder="Your Name" required />
         </div>
-      </div>
-    </section>
-
-    <section id="achievements" class="section reveal">
-      <div class="container">
-        <h2>ACHIEVEMENTS 🏆</h2>
-        <div class="cert-grid">
-          <article class="card cert-card">
-            <h4>🏆 Mega Project Expo Participant</h4>
-            <p>Presented technical work and gained feedback on real-world implementation quality.</p>
-          </article>
-          <article class="card cert-card">
-            <h4>🎤 Technical Project Presenter</h4>
-            <p>Presented embedded and IoT solutions with clear technical communication and demo workflow.</p>
-          </article>
+        <div class="form-group">
+          <input type="email" class="form-input" placeholder="your@email.com" required />
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact reveal">
-      <div class="container">
-        <h2>Contact Me 📬</h2>
-        <div class="contact-grid">
-          <p><strong>📍 Location:</strong> Kalugumalai, Tuticorin (Dist)</p>
-          <p><strong>📞 Phone:</strong> <a href="tel:+919688421728">9688421728</a></p>
-          <p><strong>✉️ Email:</strong> <a href="mailto:sharmila16v@gmail.com">sharmila16v@gmail.com</a></p>
+        <div class="form-group">
+          <textarea class="form-input" rows="6" placeholder="Tell me about your project..." required></textarea>
         </div>
-      </div>
-    </section>
-  </main>
+        <button type="submit" class="btn btn-primary btn-lg magnetic">Send Message</button>
+      </form>
 
-  <footer class="site-footer">
-    <p>Copyright 2026 Sharmila V</p>
+      <div class="social-links">
+        <a href="https://github.com/SHARMILAVA" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.8-.26.8-.58v-2.03c-3.34.73-4.03-1.61-4.03-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.05.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58A12.01 12.01 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sharmila-v-0b1004259" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.82-2.06 3.75-2.06C20.02 8.58 21 10.73 21 14.03V21h-4v-6.13c0-1.46-.03-3.34-2.03-3.34-2.04 0-2.36 1.59-2.36 3.23V21H9z"/>
+          </svg>
+        </a>
+        <a href="mailto:sharmila16v@gmail.com" class="social-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"></path>
+            <polyline points="22,7 12,13 2,7"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <span>Sharmila V</span>
+      <span>Designed and Built by Sharmila V</span>
+      <span>2026</span>
+    </div>
   </footer>
 
-  <div class="section-modal" id="section-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="section-modal-title">
-    <div class="section-modal-panel">
-      <div class="section-modal-header">
-        <h2 id="section-modal-title">Section</h2>
-        <button class="section-modal-close" type="button" aria-label="Close section popup">Close</button>
-      </div>
-      <div class="section-modal-body" id="section-modal-body"></div>
-    </div>
-  </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
